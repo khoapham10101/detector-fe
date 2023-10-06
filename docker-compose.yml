@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+  fe:
+    build:
+      context: ./
+    ports:
+      - 3868:3000
+      - 3869:3001
+    volumes:
+      - './:/src'

@@ -7,21 +7,31 @@ Currently, two official plugins are available:
 - [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
 - [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-## Expanding the ESLint configuration
+# Detector Inspector UI
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+UI platform.
 
-- Configure the top-level `parserOptions` property like this:
+## Getting Started
 
-```js
-   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-   },
+Clone the git repository on your local machine.
+
+### Prerequisites
+
+To can develop we need to install on the local machine:
+
+1. Unix OS
+2. [Docker CE](https://www.docker.com/community-edition)
+3. [To run docker as non root](https://docs.docker.com/install/linux/linux-postinstall/)
+4. [Docker Compose](https://docs.docker.com/compose/install/)
+
+### Installing
+To get the project up and running you need to go in the root directory of the project and do the following command:
+```bash
+docker-compose up -d
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+### Develop
+
+#### Test code
+[localhost:3868](http://localhost:3868)
+[localhost:3869](http://localhost:3869)
