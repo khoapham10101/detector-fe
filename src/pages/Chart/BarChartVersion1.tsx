@@ -76,7 +76,7 @@ const BarChartVersion1 = () => {
         }}
       >
         <CartesianGrid strokeDasharray='3 3' />
-        <XAxis dataKey='second_column' />
+        <XAxis dataKey='fourth_column' />
         <YAxis />
         <Tooltip />
         <Legend />

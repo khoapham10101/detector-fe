@@ -56,7 +56,7 @@ const data = [
     first_column_number: '1.595',
     second_column: ' Ethel Catherwood (CAN)',
     third_column: '5 August 1928',
-    fourth_column: 'Amsterdam[1]'
+    fourth_column: 'Amsterdam[x1]'
   }
 ]
 
@@ -75,11 +75,11 @@ const BarChartVersion2 = () => {
         }}
       >
         <CartesianGrid stroke='#f5f5f5' />
-        <XAxis dataKey='third_column' scale='band' />
+        <XAxis dataKey='fourth_column' />
         <YAxis />
         <Tooltip />
         <Legend />
-        <Bar dataKey='first_column_number' barSize={20} fill='#413ea0' />
+        <Bar dataKey='first_column_number' barSize={50} fill='#413ea0' />
         <Line type='monotone' dataKey='first_column_number' stroke='#ff7300' />
       </ComposedChart>
     </ResponsiveContainer>
